@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-off-white text-primary-dark;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply w-full relative;
+  }
+
+  .page-width {
+    @apply mx-auto px-0;
+    width: 1512px;
+  }
+
+  .feature-card {
+    @apply bg-pure-white rounded-[30px] flex flex-col items-center justify-center;
+  }
+
+  .faq-card {
+    @apply bg-pure-white rounded-[24px];
+  }
+
+  .cta-button {
+    @apply bg-accent-lime text-primary-dark rounded-[4px] px-[24px] py-[8px] flex items-center gap-[16px] font-semibold text-[18px] cursor-pointer transition-all duration-200 hover:opacity-90;
+  }
+}
