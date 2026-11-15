@@ -45,3 +45,4 @@ npm run preview # Preview production build
 
 ## Images
 All images are downloaded from the Figma file and stored in `public/assets/`.
+trigger redeploy
